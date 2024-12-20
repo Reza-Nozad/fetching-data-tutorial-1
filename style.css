@@ -20,6 +20,9 @@ body {
 #user-container {
     /* display: flex; */
     border: 1px solid black;
+    margin: 10px 0; /* Space between sections */
+    padding: 10px;
+    max-width: 400px;  /* Space inside the boxes */
     /* position: absolute;
     right: 30px;
     top: 30px; */
@@ -27,12 +30,44 @@ body {
 
 #images-container {
     border: 1px solid black;
+    margin: 10px 0; /* Space between sections */
+    padding: 10px;  /* Space inside the boxes */
     /* height: 20px;
-    width: auto;
-    background-color: aquamarine; */
+    width: auto;*/
+    background-color: aquamarine; 
 }
 
 #header-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;  /* Add some space between the columns */
+}
+#album-container {
+    background-color: #f0f0f0; /* Light background for album section */
+    border: 1px solid black;
+    margin: 10px 0; /* Space between sections */
+    padding: 10px;  /* Space inside the boxes */
+}
+
+
+#album-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
+
+#album-list li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;  /* Adds a small separator between album titles */
+}
+#image-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#image-list img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
 }
